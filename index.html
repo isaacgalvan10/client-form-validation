@@ -14,23 +14,35 @@
   <h1>Welcome to My Millioniare course!</h1>
   <h2>Where I teach YOU to become a MILLIONAIRE!</h2>
   <h3>SIGN UP NOW TO GET MY $1,000,000 COURSE FOR <span class="red">ONLY $19.99!</span></h3>
-  <input type="text">
-  <input type="email" name="email@email.com" id="email">
-  <input type="password" name="Password" id="password">
-  <button id="submit">submit</button>
-  <script src="app.js"></script>
-
+  <div id="error"></div>
+  <form action="/member.html" method="GET">
+    <div class="name">
+      <label for="name">Name</label>
+      <input type="text" name="name" placeholder="John Smith" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="Email" id="email" placeholder="email@email.com" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="Password" id="password" required>
+    </div>
+  <button id="submit" type="submit">submit</button>
+  </form>
+  
   <span class="red"><h3>99% discount only available for 5 hours!!</h3></span>
-
+  
   <p>In this course I will teach you to become a MILLIONAIRE by teaching you step by step.</p>
   <ul>
     <li>STEP 1: Sign up to the course</li>
     <li>STEP 2: Get this insane limited time only discount of 99% off!</li>
     <li>STEP 3: BECOME A MILLIONAIRE!</li>
   </ul>
-
+  
   <div class="reviews">
     <h3>Here are some of our reviews</h3>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
